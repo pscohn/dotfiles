@@ -6,8 +6,8 @@
 
 ######## Variables
 
-dir = ~/dotfiles
-olddir = ~/dotfiles_old		# old dotfiles backup
+dir=~/dotfiles
+olddir=~/dotfiles_old		# old dotfiles backup
 files="vimrc"
 
 ########
