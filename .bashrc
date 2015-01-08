@@ -3,5 +3,5 @@ source ~/.bash_aliases
 cd ~
 
 function code(){
-cd $(python3 /usr/bin/code "$1")
+cd $(python3 /Users/paulcohn/dotfiles/code.py "$1")
 }
