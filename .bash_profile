@@ -2,6 +2,7 @@ export PATH="/usr/local/mysql/bin:$PATH"
 
 echo "Welcome, Paul"
 source ~/.bash_aliases
+source ~/.bashrc
 
 alias ll='ls -la'
 
