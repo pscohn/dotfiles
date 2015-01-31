@@ -4,7 +4,6 @@ echo "Welcome, Paul"
 source ~/.bash_aliases
 source ~/.bashrc
 
-alias ll='ls -la'
 
 # export PS1='do what? --> '
 # default PS1='\h:\W \u$ '
