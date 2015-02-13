@@ -1,12 +1,13 @@
 execute pathogen#infect()
+set runtimepath-=~/.vim/bundle/auto-pairs " Temporarily disable pairs
 
 set number
 set t_co=256
 set term=screen-256color
 syntax enable
 let g:solarized_termcolors=256
-set background=dark
-colorscheme solarized
+set background=light
+colorscheme slate
 set guifont=Monaco:h14
 set laststatus=2
 set statusline=   " clear the statusline for when vimrc is reloaded
