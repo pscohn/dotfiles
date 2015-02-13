@@ -14,6 +14,8 @@ def main():
         'd': 'Code/django/',
         'cb': 'Code/django/commonplace/',
         'h': 'Code/haskell/', 
+        'j': 'Code/javascript/',
+        'g': 'Code/go/src/github.com/pscohn'
     }
 
     add = ''
