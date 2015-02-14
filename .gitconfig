@@ -1,0 +1,8 @@
+[user]
+	name = Paul Cohn
+	email = pscohn@gmail.com
+[core]
+	editor = vim
+	excludesfile = /Users/paulcohn/.gitignore_global
+[color]
+	ui = true
