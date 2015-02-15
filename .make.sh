@@ -6,9 +6,9 @@
 
 ######## Variables
 
-dir=~/dotfiles
+dir=~/Code/dotfiles
 olddir=~/dotfiles_old		# old dotfiles backup
-files="vimrc"
+files="vimrc gitconfig gitignore_global bash_aliases bash_profile inputrc mongorc.js tmux.conf vim"
 
 ########
 
@@ -25,7 +25,7 @@ echo "...done"
 # move any existing dotfiles in homedir to dotfiles_old, create symlinks
 for file in $files; do
 	echo "Moving any existing dotfiles from ~ to $olddir"
-	mv ~/.$file ~/dotfiles_old/
+	mv ~/.$file $olddir
 	echo "Creating symlink to $file in home directory."
-	ln -s $dir/$file ~/.$file
+	ln -s $dir/.$file ~/.$file
 done
