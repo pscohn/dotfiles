@@ -7,7 +7,7 @@ source ~/.bash_aliases
 # default PS1='\h:\W \u$ '
 export PS1='paul:\W $ '
 
-GOPATH="$HOME/Code/go"
+GOPATH="$HOME/code/go"
 export GOPATH
 
 export GOROOT="/usr/local/go"
@@ -16,5 +16,5 @@ PATH="/usr/local/bin:/opt/local/sbin:/Users/paulcohn/bin:/Library/Frameworks/Pyt
 export PATH
 
 function code(){
-cd $(python3 /Users/paulcohn/Code/dotfiles/code.py "$@")
+cd $(python3 "$HOME"/code/dotfiles/code.py "$@")
 } 
