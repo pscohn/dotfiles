@@ -10,7 +10,9 @@ export PS1='paul:\W $ '
 GOPATH="$HOME/Code/go"
 export GOPATH
 
-PATH="/usr/local/bin:/opt/local/sbin:/Users/paulcohn/bin:/Library/Frameworks/Python.framework/Versions/3.4/bin:/usr/local/mysql/bin:${PATH}:$GOPATH/bin"
+export GOROOT="/usr/local/go"
+
+PATH="/usr/local/bin:/opt/local/sbin:/Users/paulcohn/bin:/Library/Frameworks/Python.framework/Versions/3.4/bin:/usr/local/mysql/bin:/usr/local/go/bin:${PATH}:$GOPATH/bin"
 export PATH
 
 function code(){
