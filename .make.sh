@@ -8,7 +8,7 @@
 
 dir=~/Code/dotfiles
 olddir=~/dotfiles_old		# old dotfiles backup
-files="vimrc gitconfig gitignore_global bash_aliases bash_profile inputrc mongorc.js tmux.conf vim"
+files="vimrc gitconfig gitignore_global bashrc bash_aliases bash_profile inputrc mongorc.js tmux.conf vim"
 
 ########
 
