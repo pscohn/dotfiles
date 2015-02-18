@@ -9,3 +9,8 @@ if [[ $OSTYPE == 'darwin14' ]]; then
 elif [[ $OSTYPE == 'linux-gnu' ]]; then
     alias ls='ls -la --color=auto'
 fi
+
+parallel() {
+    cd ../"$@"
+}
+alias pd=parallel
