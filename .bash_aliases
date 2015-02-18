@@ -17,7 +17,7 @@ _parallelComplete() {
 
 parallel() {
     
-    cd ../"$@"
+    cd ../"$1"
 }
 alias pd=parallel
 complete -F _parallelComplete pd
