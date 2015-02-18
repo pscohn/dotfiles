@@ -10,7 +10,14 @@ elif [[ $OSTYPE == 'linux-gnu' ]]; then
     alias ls='ls -la --color=auto'
 fi
 
+_parallelComplete() {
+    local cur=${COMP_WORDS[COMP_CWORD]}
+    COMPREPLY=( $(compgen -W "$(ls -C --ignore=\. --ignore=\.\. ../)" -- $cur) )
+}
+
 parallel() {
+    
     cd ../"$@"
 }
 alias pd=parallel
+complete -F _parallelComplete pd
