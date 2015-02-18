@@ -3,6 +3,6 @@
 	email = pscohn@gmail.com
 [core]
 	editor = vim
-	excludesfile = /Users/paulcohn/.gitignore_global
+	excludesfile = "$HOME"/.gitignore_global
 [color]
 	ui = true
