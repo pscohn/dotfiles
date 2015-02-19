@@ -1,5 +1,3 @@
-cd ~
-
 echo "Welcome, Paul"
 source ~/.bash_aliases
 
