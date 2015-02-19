@@ -15,6 +15,12 @@ export GOROOT="/usr/local/go"
 PATH="/usr/local/bin:/opt/local/sbin:/Users/paulcohn/bin:/Library/Frameworks/Python.framework/Versions/3.4/bin:/usr/local/mysql/bin:/usr/local/go/bin:${PATH}:$GOPATH/bin"
 export PATH
 
+_codeComplete() {
+    local cur=${COMP_WORDS[COMP_CWORD]}
+    COMPREPLY=( $(compgen -W "$(ls -C --ignore=\. --ignore=\.\. ~/code/)" -- $cur) )
+}
+
 function code(){
 cd $(python3 "$HOME"/code/dotfiles/code.py "$@")
 } 
+complete -F _codeComplete code
