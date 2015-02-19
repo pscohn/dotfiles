@@ -16,8 +16,12 @@ _parallelComplete() {
 }
 
 parallel() {
-    
     cd ../"$1"
 }
 alias pd=parallel
 complete -F _parallelComplete pd
+
+makeCD() {
+    mkdir "$1" && cd "$1"
+}
+alias md=makeCD
