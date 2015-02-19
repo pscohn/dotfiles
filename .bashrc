@@ -1,5 +1,6 @@
 echo "Welcome, Paul"
 source ~/.bash_aliases
+source ~/.bash_variables
 
 # export PS1='do what? --> '
 # default PS1='\h:\W \u$ '
