@@ -1,0 +1,7 @@
+tmux: split-window -h: prefix+%
+tmux: split-window: prefix+"
+tmux: toggle layout: prefix-space
+tmux: kill pane: prefix-x
+tmux: prefix : resize-pane -RLU [20]
+devices/usb drives: see drives: sudo fdisk -l
+usb drive location: /var/host/media/removable

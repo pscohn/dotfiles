@@ -3,6 +3,7 @@ alias h='cd ~/'
 alias chrome="open -a 'Google Chrome'"
 alias tmux="TERM=screen-256color-bce tmux"
 alias vim='vim -p'
+alias com="cat ~/code/dotfiles/commands.txt"
 
 if [[ $OSTYPE == 'darwin14' ]]; then
     alias ls='ls -laG'
