@@ -8,6 +8,7 @@ syntax enable
 let g:solarized_termcolors=256
 set background=light
 colorscheme slate
+hi Search ctermbg=1
 set guifont=Monaco:h14
 set laststatus=2
 set statusline=   " clear the statusline for when vimrc is reloaded
