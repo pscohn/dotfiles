@@ -7,8 +7,10 @@ alias com="cat ~/code/dotfiles/commands.txt"
 
 if [[ $OSTYPE == 'darwin14' ]]; then
     alias ls='ls -laG'
+    alias ll='ls -aCG'
 elif [[ $OSTYPE == 'linux-gnu' ]]; then
     alias ls='ls -la --color=auto'
+    alias ll='ls -aC --color=auto'
 fi
 
 _parallelComplete() {
