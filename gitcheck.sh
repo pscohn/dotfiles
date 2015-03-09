@@ -10,6 +10,9 @@ gitcheck() {
         if [[ `git status --porcelain` ]]; then
             echo "uncommitted changes in $d"        
         fi
+        if [[ `git log origin/master..HEAD` ]]; then
+            echo "unpushed    changes in $d"
+        fi
         cd $START
     done
 }
