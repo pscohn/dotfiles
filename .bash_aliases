@@ -28,3 +28,7 @@ makeCD() {
     mkdir "$1" && cd "$1"
 }
 alias md=makeCD
+
+# import function to look for uncommited git changes
+source "gitcheck.sh"
+alias gitcheck=gitcheck
