@@ -29,6 +29,25 @@ makeCD() {
 }
 alias md=makeCD
 
-# import function to look for uncommited git changes
-source "gitcheck.sh"
+# function to look for uncommited git changes
+gitcheck() {
+    DIRS=`find $1 -type d -name '\.git'`
+    START=$PWD
+    for dir in $DIRS; do
+        cd $dir
+        cd ..
+        d=$PWD
+        if [[ `git status --porcelain` ]]; then
+            echo "uncommitted changes in $d"        
+        fi
+        if [[ `git remote` ]]; then
+            if [[ `git log origin/master..HEAD` ]]; then
+                echo "unpushed    changes in $d"
+            fi
+        else
+            echo "no remote repository:  $d"
+        fi
+        cd $START
+    done
+}
 alias gitcheck=gitcheck
