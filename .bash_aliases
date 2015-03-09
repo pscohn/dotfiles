@@ -38,14 +38,14 @@ gitcheck() {
         cd ..
         d=$PWD
         if [[ `git status --porcelain` ]]; then
-            echo "uncommitted changes in $d"        
+            echo "uncommitted changes:  $d"        
         fi
         if [[ `git remote` ]]; then
             if [[ `git log origin/master..HEAD` ]]; then
-                echo "unpushed    changes in $d"
+                echo "unpushed changes:     $d"
             fi
         else
-            echo "no remote repository:  $d"
+            echo "no remote repository: $d"
         fi
         cd $START
     done
