@@ -7,8 +7,8 @@ gitcheck() {
         cd $dir
         cd ..
         d=$PWD
-        if [[ `git status --porcelain` ]]; then
-            echo "uncommitted changes in $d"        
+        if [[ `git status -sb --porcelain` ]]; then
+            echo "$d: uncommitted changes"        
         fi
         cd $START
     done
