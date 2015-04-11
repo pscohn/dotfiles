@@ -44,4 +44,6 @@ set notimeout
 set ttimeout
 set timeoutlen=100
 
-autocmd bufnewfile *.py 0r /Users/paulcohn/dotfiles/default.py
+autocmd bufnewfile *.py 0r /home/paul/code/dotfiles/default.py
+
+autocmd bufnewfile,bufread Makefile set noexpandtab
