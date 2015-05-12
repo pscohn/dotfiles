@@ -6,7 +6,7 @@
 
 ######## Variables
 
-dir=~/Code/dotfiles
+dir=~/dotfiles
 olddir=~/dotfiles_old		# old dotfiles backup
 files="vimrc gitconfig gitignore_global bashrc bash_aliases bash_profile inputrc mongorc.js bash_variables tmux.conf vim"
 
