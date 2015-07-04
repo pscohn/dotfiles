@@ -24,7 +24,7 @@ echo "...done"
 
 # upgrade vim plugins
 echo "Updating vim plugins"
-git submodule foreach git pull origin master
+git submodule init && git submodule update
 echo "...done"
 cd $dir
 
