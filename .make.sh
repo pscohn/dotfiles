@@ -22,6 +22,12 @@ echo "Changing to the $dir directory"
 cd $dir
 echo "...done"
 
+# upgrade vim plugins
+echo "Updating vim plugins"
+git submodule foreach git pull origin master
+echo "...done"
+cd $dir
+
 # move any existing dotfiles in homedir to dotfiles_old, create symlinks
 for file in $files; do
 	echo "Moving any existing dotfiles from ~ to $olddir"
@@ -29,5 +35,3 @@ for file in $files; do
 	echo "Creating symlink to $file in home directory."
 	ln -s $dir/.$file ~/.$file
 done
-
-# git clone https://github.com/walm/jshint.vim
