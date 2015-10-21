@@ -23,3 +23,6 @@ function code(){
 cd $(python3 "$HOME"/code/dotfiles/code.py "$@")
 } 
 complete -F _codeComplete code
+
+export NVM_DIR="/Users/paulcohn/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
