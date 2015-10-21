@@ -1,5 +1,6 @@
 execute pathogen#infect()
 set runtimepath-=~/.vim/bundle/auto-pairs " Temporarily disable pairs
+let g:syntastic_javascript_checkers = ['eslint']
 
 set number
 set t_co=256
