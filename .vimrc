@@ -12,7 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/syntastic'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
-filetype plugin indent on    " required
+"filetype plugin indent on    " required
 
 set runtimepath-=~/.vim/bundle/auto-pairs " Temporarily disable pairs
 
@@ -40,11 +40,24 @@ set statusline+=%-14.(%l,%c%V%)\ %<%P        " offset
 
 map <C-n> :NERDTreeToggle<CR>
 vmap <C-c> :w !pbcopy<CR><CR> 
+ 
+function! ConvertTabs()
+  " convert spaces to tabs first
+  set noexpandtab
+  set tabstop=4
+  set shiftwidth=4
+  retab!
+  " " now you have tabs instead of spaces, so insert spaces according to
+  " " your new preference
+  set tabstop=2
+  set shiftwidth=2
+  set expandtab
+  retab!
+endfunction
 
-
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 set shiftround
 set expandtab
 
