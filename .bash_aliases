@@ -5,7 +5,7 @@ alias tmux="TERM=screen-256color-bce tmux"
 alias vim='vim -p'
 alias com="cat ~/code/dotfiles/commands.txt"
 
-if [[ $OSTYPE == 'darwin14' ]]; then
+if [[ $OSTYPE == 'darwin15' ]]; then
     alias ls='ls -laG'
     alias ll='ls -aCG'
 elif [[ $OSTYPE == 'linux-gnu' ]]; then
