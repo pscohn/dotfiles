@@ -5,6 +5,8 @@ source ~/.bash_variables
 # export PS1='do what? --> '
 # default PS1='\h:\W \u$ '
 export PS1='paul:\W $ '
+export EDITOR="/usr/bin/vim"
+export PSQL_EDITOR="/usr/bin/vim"
 
 GOPATH="$HOME/code/go"
 export GOPATH

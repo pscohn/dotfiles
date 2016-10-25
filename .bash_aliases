@@ -4,6 +4,11 @@ alias chrome="open -a 'Google Chrome'"
 alias tmux="TERM=screen-256color-bce tmux"
 alias vim='vim -p'
 alias com="cat ~/code/dotfiles/commands.txt"
+alias gs="git status"
+alias gb="git branch"
+alias gd="git diff"
+alias ga="git add ."
+alias gpd="git pull origin develop"
 
 if [[ $OSTYPE == 'darwin15' ]]; then
     alias ls='ls -laG'
