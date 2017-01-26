@@ -10,6 +10,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/syntastic'
+Plugin 'vimwiki/vimwiki'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 "filetype plugin indent on    " required
@@ -40,6 +41,8 @@ set statusline+=%-14.(%l,%c%V%)\ %<%P        " offset
 
 map <C-n> :NERDTreeToggle<CR>
 vmap <C-c> :w !pbcopy<CR><CR> 
+
+let mapleader=","
  
 function! ConvertTabs()
   " convert spaces to tabs first
@@ -78,3 +81,12 @@ autocmd bufnewfile,bufread Makefile set noexpandtab
 
 " Syntastic configuration
 let g:syntastic_javascript_checkers = ['eslint']
+
+" for vimwiki
+filetype plugin on
+syntax on
+" let g:vimwiki_folding='expr'
+let g:vimwiki_list = [
+                        \{'path': '~/Google Drive/vimwiki/personal.wiki'},
+                \]
+au BufRead,BufNewFile *.wiki set filetype=vimwiki
