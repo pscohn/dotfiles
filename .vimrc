@@ -11,6 +11,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'vimwiki/vimwiki'
+Plugin 'nerdtree/nerdtree'
+let g:NERDTreeWinPos = "right"
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 "filetype plugin indent on    " required
@@ -22,8 +24,8 @@ set t_co=256
 set term=screen-256color
 syntax enable
 let g:solarized_termcolors=256
-set background=light
-colorscheme slate
+set background=dark
+colorscheme default
 hi Search ctermbg=1
 set guifont=Monaco:h14
 set laststatus=2
@@ -74,6 +76,11 @@ map <ScrollWheelDown> <C-E>
 set notimeout
 set ttimeout
 set timeoutlen=100
+
+
+" Persistent undo after closing file
+set undofile
+set undodir=~/.vim/undodir
 
 autocmd bufnewfile *.py 0r /home/paul/code/dotfiles/default.py
 

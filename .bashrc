@@ -9,6 +9,12 @@ export EDITOR="/usr/bin/vim"
 export PSQL_EDITOR="/usr/bin/vim"
 export HISTCONTROL=ignoreboth:erasedups # ignore duplicate entries in history
 
+# Set CLICOLOR if you want Ansi Colors in iTerm2 
+export CLICOLOR=1
+
+# Set colors to match iTerm2 Terminal Colors
+export TERM=xterm-256color
+
 GOPATH="$HOME/code/go"
 export GOPATH
 

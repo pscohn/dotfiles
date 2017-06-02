@@ -10,7 +10,7 @@ alias gd="git diff"
 alias ga="git add ."
 alias gpd="git pull origin develop"
 
-if [[ $OSTYPE == 'darwin15' ]]; then
+if [[ $OSTYPE == 'darwin'* ]]; then
     alias ls='ls -laG'
     alias ll='ls -aCG'
 elif [[ $OSTYPE == 'linux-gnu' ]]; then
