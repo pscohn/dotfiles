@@ -38,7 +38,7 @@ _codeComplete() {
 }
 
 function code(){
-cd $(python3 "$HOME"/code/dotfiles/code.py "$@")
+cd $(python3 "$HOME"/dotfiles/code.py "$@")
 } 
 complete -F _codeComplete code
 

@@ -23,9 +23,9 @@ set number
 set t_co=256
 set term=screen-256color
 syntax enable
-let g:solarized_termcolors=256
 set background=dark
 colorscheme default
+let g:solarized_termcolors=256
 hi Search ctermbg=1
 set guifont=Monaco:h14
 set laststatus=2
