@@ -1,6 +1,5 @@
 echo "Welcome, Paul"
 source ~/.bash_aliases
-source ~/.bash_variables
 
 # export PS1='do what? --> '
 # default PS1='\h:\W \u$ '
@@ -9,18 +8,19 @@ export EDITOR="/usr/bin/vim"
 export PSQL_EDITOR="/usr/bin/vim"
 export HISTCONTROL=ignoreboth:erasedups # ignore duplicate entries in history
 
-# Set CLICOLOR if you want Ansi Colors in iTerm2 
+# Set CLICOLOR if you want Ansi Colors in iTerm2
 export CLICOLOR=1
 
 # Set colors to match iTerm2 Terminal Colors
 export TERM=xterm-256color
 
-GOPATH="$HOME/code/go"
-export GOPATH
+#GOPATH="$HOME/code/go"
+#GOPATH="$HOME/Google Drive/Code/gostuff"
+#export GOPATH
 
-export GOROOT="/usr/local/go"
+#export GOROOT="/usr/local/go"
 
-PATH="/usr/local/bin:/opt/local/sbin:/Users/paulcohn/bin:/Library/Frameworks/Python.framework/Versions/3.4/bin:/usr/local/mysql/bin:/usr/local/go/bin:${PATH}:$GOPATH/bin"
+PATH=$PATH:/usr/local/bin:/opt/local/sbin:/Users/paulcohn/bin:/Library/Frameworks/Python.framework/Versions/3.4/bin:/usr/local/mysql/bin:/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin/
 export PATH
 
 
@@ -39,10 +39,8 @@ _codeComplete() {
 
 function code(){
 cd $(python3 "$HOME"/dotfiles/code.py "$@")
-} 
+}
 complete -F _codeComplete code
 
 export NVM_DIR="/Users/paulcohn/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-#export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

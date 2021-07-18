@@ -8,3 +8,5 @@
 	ui = true
 [credential]
 	help = cache --timeout=86400
+[push]
+	default = current

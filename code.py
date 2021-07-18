@@ -5,7 +5,7 @@ Shortcuts for moving around in bash, called from .bashrc.
 import sys
 import os.path
 
-CODE_PATH = 'Dropbox/Code/'
+CODE_PATH = 'Google\ Drive/Code/'
 
 def main():
     base = os.path.expanduser('~/')

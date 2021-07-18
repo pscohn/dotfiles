@@ -1,4 +1,4 @@
-alias python='python3.4'
+#alias python='python3.4'
 alias h='cd ~/'
 alias chrome="open -a 'Google Chrome'"
 alias tmux="TERM=screen-256color-bce tmux"
